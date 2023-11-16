@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        var simsubscreennum=0;
+        var temp=0;
+        var snd = document.getElementById("sound");
+    </script>
+
+
+</head>
+<body style="margin:0; font-family:verdana;">
+    <div id="simscreen">
+    <div id="title"><h4>Determination of Specific Yield of Open Well </h4></div>
+    <div class="simsubscreen" id="canvas0" >
+    <h4 class="incanvas">Objective:</h4>
+    <p class="incanvas" style="font-size:14px;">The objectives of determining the specific yield of an open well to estimate water availability, optimize well design, facilitate groundwater management </p><br/>
+    <h4 class="incanvas">Apparatus used:</h4>
+    <p class="incanvas" style="font-size:14px;">Sounding Tube, surveyor tape, pump, FRP tank, stopwatch etc. </p>
+    <img style="position:absolute;     left: 88px;
+    top: 251px;
+    max-width: 613px;
+    height: 240px;
+    width: 100%;" title=" pump"  src="images/full2.png" />
+    <!-- <img style="position:absolute; left:330px; top:240px;" src="images/table2.png" /> -->
+    <img style="position:absolute;    left: 609px;
+    top: 463px;
+    max-width: 98px;
+    width: 100%;" title="Surveyor tape"  src="images/tape.png" />
+    <img style="position:absolute; left: 327px;
+    top: 477px;
+    width: 56px;" title="Sounding tube" src="images/sounding1.png" />
+    <img style="position:absolute;    left: 0px;
+    top: 276px;
+    max-width: 11%;
+    width: 100%;transform: rotateY(180deg)" src="images/man.png" />
+
+    <div id="t1" class="t1" title="FRP Tank"></div>
+    <div id="w1" class="w1" title="Well"></div>
+    <div id="pump" class="p1" title="Pump"></div>
+    <br>&nbsp;<span class="tooltip" style="border-bottom:1px dotted ; color:red;     font-weight: bold;text-align:justify ">Description
+        <span class="tooltiptext" style="font-weight: normal;">
+            <p>A <strong style="color: red">pumping test</strong> is a practical method of estimating well performance, well capacity, the zone of influence of the well and aquifer characteristics (e.g., the aquifer’s ability to store and transmit water, anisotropy, aquifer extent, presence of boundary). </p>
+            
+        </span>
+        </span>
+    </div>
+
+    <div class="simsubscreen" id="canvas1" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;1&nbsp;</span>
+        <p class="steptext">&nbsp; Selection of open well for the conduction of pumping test.</p>
+        <img id="well1" style="position:absolute;    left: -18px;
+        top: 40px;
+        height: 478px;
+        width: 100%; visibility: hidden;" onmouseover="showContent('hide1')"
+             onmouseleave="hideContent('hide1')" title=""  src="images/image1.png" />
+       
+          <div id="hide1" style="position: absolute; color: black;     top: 197px;
+          left: 238px;
+          visibility: hidden;
+          width: 204px;border: 1px solid black; border-radius: 5px; padding: 5px; font-size: 14px; background-color: white;">
+          
+            <p id="text3">13°00'25.0"N 74°47'46.1"E</p>
+          </div> 
+    </div>
+    <div class="simsubscreen" id="canvas2" style="visibility:hidden;">
+      <strong class="incanvas">STEP</strong>
+      <span class="circlebg">&nbsp;2&nbsp;</span>
+      <p class="steptext">&nbsp; Measure the dimensions of the FRP tank.</p>
+      <img id="tub11" style="position:absolute;      left: 218px;
+      top: 155px;
+      height: 201px;
+      max-width: 254px;
+         width: 100%; visibility: hidden;" title=""  src="images/tub2.png" />
+         <img id="ar1" style="position:absolute;left: 238px;
+         top: 360px;
+         max-width: 197px;
+            width: 100%; visibility: hidden;" title=""  src="images/ar1.png" />
+            <p id="1m" style="position: absolute;     left: 324px;
+            top: 357px; visibility: hidden;">1m</p>
+            <img id="ar2" style="position: absolute;
+            left: 401px;
+    top: 231px;
+    max-width: 167px;
+    width: 100%;
+    rotate: 90deg;
+            visibility: hidden;
+        " title=""  src="images/ar1.png" />
+               <p id="1m1" style="position: absolute;    left: 494px;
+               top: 227px;visibility: hidden;">2m</p>
+               <img id="ar3" style="position: absolute;
+               left: 446px;
+    top: 326px;
+    max-width: 40px;
+    width: 100%;
+       
+               visibility: hidden;
+           " title=""  src="images/ar2.png" />
+                  <p id="1m2" style="position: absolute;    left: 471px;
+                  top: 327px;visibility: hidden;">1m</p>
+      </div>
+    <div class="simsubscreen" id="canvas3" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;3&nbsp;</span>
+        <p class="steptext">&nbsp;Measure the water levels of 7.5m diameter well by using surveyor tape.</p>
+        <img id="ground1" style="position:absolute;       left: 5px;
+        top: 195px;
+        max-width: 710px;
+        height: 332px;
+        width: 100%;visibility: hidden;" title=""  src="images/ground2.JPG" />
+         <img id="water1" style="position:absolute;           left: 327px;
+         top: 365px;
+         max-width: 178px;
+         height: 158px;
+         width: 100%;visibility: hidden;" title="FRP tank, pump, well"  src="images/water1.png" />
+           <img id="sound2" style="position:absolute;     left: 479px;
+           top: 171px;
+           max-width: 5px;
+           width: 14%;
+           height: 85px;width: 100%;visibility: hidden;" title="Surveyor tape"  src="images/sound2.png" />
+        <img id="set1" style="position:absolute;  left: 113px;
+        top: 102px;
+        max-width: 477px;
+        height: 422px;
+        width: 100%;visibility: hidden;" title="Well"  src="images/full1.png" />
+       <img id="tape1" style="position:absolute;   left: 513px;
+       top: 229px;
+       max-width: 59px;
+       width: 100%; visibility: hidden;" title="Surveyor tape"  src="images/tape1.png" />
+        <img id="meaMan1" style="position:absolute; left: 479px;
+        top: 129px;
+        max-width: 70px;
+        width: 100%; visibility: hidden;" title="Surveyor tape"  src="images/meaMan1.png" />
+        <img id="read1" style="position:absolute;      left: 577px;
+        top: 62px;
+        max-width: 139px;
+        width: 100%; visibility: hidden;" title="Surveyor tape"  src="images/read1.png" />
+        <p
+        id="p4"
+        style="position: absolute;    color: black;
+        font-size: 14px;
+        left: 268px;
+        top: 50px;visibility: hidden;"
+      >
+        Initial level of water = 7.115 m
+      </p>
+
+    </div>
+    <div class="simsubscreen" id="canvas4" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;4&nbsp;</span>
+        <p class="steptext">&nbsp;Switch on the pump and conduct the pump test. Measure the discharge from the pumping well using a 2000 litre FRP tank / container of a known volume. Use hour clock to note down the time taken to fill up the barrier. </p>
+        <img id="sw1" style="position:absolute;    left: 169px;
+        top: 139px;
+        max-width: 27px;
+        width: 100%; visibility: hidden;" title=""  src="images/sw1.png" />
+         <img id="sw2" style="position:absolute;left: 554px;
+         top: 67px;
+         max-width: 144px;
+         width: 100%; visibility: hidden;" title=""  src="images/togoff.png" />
+         <img id="sw3" style="position:absolute;left: 554px;
+         top: 67px;
+         max-width: 144px;
+         width: 100%; visibility: hidden;" title=""  src="images/togon.png" />
+         <img id="tog1" style="position:absolute;    left: 642px;
+         top: 140px;
+         max-width: 27px;
+         width: 100%; visibility: hidden;" title=""  src="images/tog1.png" />
+          <div id="grad4" style="position: absolute; top: 144px; text-align:left; left: 115px; width:8px; border-radius: 10px; height: 0px; color:#888888; visibility: hidden; "></div>
+          <div id="grad2" style="position: absolute;     top: 242px;
+          text-align: left;
+          left: 66px;
+          height: 5px;
+          width: 80px;color:#888888; visibility: hidden; "></div>
+            <img id="flow1" style="position:absolute;    left: 5px;
+            top: 239px;
+            max-width: 149px;
+            height: 6px;
+            width: 100%; visibility: hidden;" title=""  src="images/flow1.png" />
+            <img id="flow2" style="position:absolute;left: 19px;
+            top: 173px;
+            max-width: 51px;
+            height: 70px;
+            width: 100%; visibility: hidden;" title=""  src="images/flow2.png" />
+         <img id="tub1" style="position:absolute;left: 56px;
+         top: 171px;
+         max-width: 92px;
+         width: 100%; visibility: hidden;" title=""  src="images/tub.png" />
+         <p id="vol1" style="position: absolute; visibility: hidden;     top: 59px;
+         left: 232px;
+         font-size: 14px;">Volume of water in FRP tank = 1.325 m<sup>3</sup></p>
+<p id="vol2" style="position: absolute; visibility: hidden;     top: 59px;
+left: 232px;
+font-size: 14px;">Volume of water in FRP tank = 0.884 m<sup>3</sup></p>
+ <p
+ id="p5"
+ style="position: absolute;    color: black;
+     font-size: 14px;
+    left: 318px;
+    top: 87px;visibility: hidden;"
+>
+ Manometer reading = 1.325 m
+</p>
+<p
+id="p6"
+style="position: absolute;    color: black;
+    font-size: 14px;
+    left: 318px;
+    top: 87px;visibility: hidden;"
+>
+Manometer reading = 0.884 m
+</p>
+<img id="clock1" style="position:absolute;left: 4px;
+         top: 80px;
+         max-width: 87px;
+         width: 100%; visibility: hidden;" title=""  src="images/clock.png" />
+         <img id="pin1" style="position:absolute;     left: 45px;
+         top: 95px;
+         max-width: 5px;
+         width: 100%; visibility: hidden;" title=""  src="images/pin.png" />
+         <span
+         id="dialog3"
+         style="
+           position: absolute;
+           padding: 10px;
+           border: 1px solid black;
+           background-color: black;
+           border-radius: 5px;
+           left: 200px;
+           top: 49px;
+           width: 284px;
+           visibility: hidden;
+         "
+       >
+         <p
+           id="divp2"
+           style="color: white; font-size: 15px; padding: 5px; margin-top: 0px"
+         >
+           Note:-After the pumping test, take measurements of water level at required interval. Note all these readings.
+         </p>
+         <input
+           type="button"
+           style="
+             cursor: pointer;
+             border-radius: 5px;
+             margin: 0auto;
+             margin-left: 125px;
+             margin-top: 0px;
+           "
+           id="5-7"
+           value="OK"
+         />
+         <div id="tab1" style="position: absolute;    left: -188px;
+         top: 230px;
+         height: 230px;
+         width: 299px; overflow: auto; visibility: hidden;">
+            <table id="dataTable1" border size="1" style="position: absolute; font-size: 12px; text-align: center; background-color: white; visibility: hidden;">
+                <tbody>
+                    <tr id="g-1" style="visibility: hidden;">
+                        <th rowspan="2">Time(min)</th>
+                        <th colspan="2" style="text-align:center;">Water Level(m)</th>
+                      </tr>
+                      <tr>
+                        
+                        <th >During Pumping</th>
+                        <th>After pumping test</th>
+                      </tr>
+                      <tr id="g-2" style="visibility: hidden;">
+                      <td>2</td>
+                        <td>7.145</td>
+                        <td id="i1" style="visibility: hidden;">7.335</td>
+                      </tr>
+                      <tr id="g-3" style="visibility: hidden;">
+                        <td>5</td>
+                          <td>7.175</td>
+                          <td id="i2" style="visibility: hidden;">7.315</td>
+                        </tr>
+                        <tr id="g-4" style="visibility: hidden;">
+                            <td>10</td>
+                              <td>7.205</td>
+                              <td id="i3" style="visibility: hidden;">7.285</td>
+                            </tr>
+                        <tr id="g-5" style="visibility: hidden;">
+                                <td>15</td>
+                                  <td>7.235</td>
+                                  <td id="i4" style="visibility: hidden;">7.265</td>
+                        </tr>
+                        <tr id="g-6" style="visibility: hidden;">
+                            <td>20</td>
+                              <td>7.265</td>
+                              <td id="i5" style="visibility: hidden;">7.245</td>
+                    </tr>
+                    <tr id="g-7" style="visibility: hidden;">
+                        <td>30</td>
+                          <td>7.295</td>
+                          <td id="i6" style="visibility: hidden;">7.245</td>
+                </tr>
+                <tr id="g-8" style="visibility: hidden;">
+                    <td>40</td>
+                      <td>7.325</td>
+                      <td id="i7" style="visibility: hidden;">7.245</td>
+            </tr>
+            <tr id="g-9" style="visibility: hidden;">
+                <td>50</td>
+                  <td>7.345</td>
+                  <td id="i8" style="visibility: hidden;">7.245</td>
+        </tr>
+        <tr id="g-10" style="visibility: hidden;">
+            <td>60</td>
+              <td>7.345</td>
+              <td id="i9" style="visibility: hidden;">7.245</td>
+    </tr>
+
+
+    <tr id="g-11" style="visibility: hidden;">
+        <td>75</td>
+          <td>7.325</td>
+          <td id="i10" style="visibility: hidden;">7.245</td>
+</tr>
+<tr id="g-12" style="visibility: hidden;">
+    <td>90</td>
+      <td>7.345</td>
+      <td id="i11" style="visibility: hidden;">7.235</td>
+</tr>
+<tr id="g-13" style="visibility: hidden;">
+    <td>105</td>
+      <td>7.345</td>
+      <td id="i12" style="visibility: hidden;">7.235</td>
+</tr>
+
+<tr id="g-14" style="visibility: hidden;">
+    <td>120</td>
+      <td>7.345</td>
+      <td id="i13" style="visibility: hidden;">7.235</td>
+</tr>
+                </tbody>
+            </table>
+        </div>
+       </span>
+
+
+
+
+        </div>
+        <div class="simsubscreen" id="canvas5" style="visibility:hidden;">
+          <h2 class="steptext" style="position: absolute; font-size :19px; ">Calculation: </h2><br>
+            <span class="tooltip" style=" color:red;    left: 32px;
+            top: 18px;padding: 3px;width: 20%;">
+              <p style="border-bottom:1px dotted ; color:red;text-align:justify; width:242px; margin-top: 20px; margin-left: -17px; "><b>Variables Used in Calculations</b></p>
+              <span class="tooltiptext"style="width: 226px;
+              top: 19px;
+              left: 230px;
+              height: 54px;padding: 0px;">
+              <p style="position: absolute; padding: 6px;">Initial water level = 7.115 m</p></span></span>
+            <div id="tab2" style="position: absolute;    left: 21px;
+               top: 106px;
+    height: 373px;
+    width: 705px; overflow: auto; visibility: hidden;">
+            <table id="dataTable2" border size="1" style="position: absolute; font-size: 12px; text-align: center; background-color: white; visibility: hidden;">
+                <tbody>
+                    <tr >
+                        <th rowspan="2">Time(min)</th>
+                        <th colspan="2" style="text-align:center;">Water Level(m)</th>
+                        <th colspan="2" style="text-align:center;">Drawdown(m)</th>
+                      </tr>
+                      <tr>
+                        
+                        <th >During Pumping </th>
+                        <th>After pumping was stopped</th>
+                        <th >Initial water level-During Pumping</th>
+                        <th>Initial water level-After pumping was stopped</th>
+                      </tr>
+                      <tr  >
+                      <td>2</td>
+                        <td>7.145</td>
+                        <td >7.335</td>
+                        <td><input type="text" class="values" id="gi-1"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-2"style="font-weight: bold; text-align: center;"></input></td>
+                      </tr>
+                      <tr  >
+                        <td>5</td>
+                          <td>7.175</td>
+                          <td  >7.315</td>
+                          <td><input type="text" class="values" id="gi-3"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-4"style="font-weight: bold; text-align: center;"></input></td>
+                        </tr>
+                        <tr  >
+                            <td>10</td>
+                              <td>7.205</td>
+                              <td >7.285</td>
+                              <td><input type="text" class="values" id="gi-5"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-6"style="font-weight: bold; text-align: center;"></input></td>
+                            </tr>
+                        <tr  >
+                                <td>15</td>
+                                  <td>7.235</td>
+                                  <td >7.265</td>
+                                  <td><input type="text" class="values" id="gi-7"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-8"style="font-weight: bold; text-align: center;"></input></td>
+                        </tr>
+                        <tr  >
+                            <td>20</td>
+                              <td>7.265</td>
+                              <td  >7.245</td>
+                              <td><input type="text" class="values" id="gi-9"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-10"style="font-weight: bold; text-align: center;"></input></td>
+                    </tr>
+                    <tr  >
+                        <td>30</td>
+                          <td>7.295</td>
+                          <td >7.245</td>
+                          <td><input type="text" class="values" id="gi-11"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-12"style="font-weight: bold; text-align: center;"></input></td>
+                </tr>
+                <tr >
+                    <td>40</td>
+                      <td>7.325</td>
+                      <td >7.245</td>
+                      <td><input type="text" class="values" id="gi-13"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-14"style="font-weight: bold; text-align: center;"></input></td>
+            </tr>
+            <tr  >
+                <td>50</td>
+                  <td>7.345</td>
+                  <td  >7.245</td>
+                  <td><input type="text" class="values" id="gi-15"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-16"style="font-weight: bold; text-align: center;"></input></td>
+        </tr>
+        <tr >
+            <td>60</td>
+              <td>7.345</td>
+              <td  >7.245</td>
+              <td><input type="text" class="values" id="gi-17"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-18"style="font-weight: bold; text-align: center;"></input></td>
+    </tr>
+
+
+    <tr >
+        <td>75</td>
+          <td>7.325</td>
+          <td  >7.245</td>
+          <td><input type="text" class="values" id="gi-19"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-20"style="font-weight: bold; text-align: center;"></input></td>
+</tr>
+<tr >
+    <td>90</td>
+      <td>7.345</td>
+      <td >7.235</td>
+      <td><input type="text" class="values" id="gi-21"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-22"style="font-weight: bold; text-align: center;"></input></td>
+</tr>
+<tr >
+    <td>105</td>
+      <td>7.345</td>
+      <td >7.235</td>
+      <td><input type="text" class="values" id="gi-23"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-24"style="font-weight: bold; text-align: center;"></input></td>
+</tr>
+
+<tr  >
+    <td>120</td>
+      <td>7.345</td>
+      <td  >7.235</td>
+      <td><input type="text" class="values" id="gi-25"style="font-weight: bold; text-align: center;"></input></td>
+                        <td><input type="text" class="values" id="gi-26"style="font-weight: bold; text-align: center;"></input></td>
+</tr>
+                </tbody>
+            </table>
+
+        </div>
+        <button id="btn1" style="position: absolute;left: 553px;
+        top: 496px; visibility: hidden;" onclick="checkInput1()">CHECK</button>
+        <button id="resbtn1" style="position: absolute; left: 553px;
+        top: 494px; visibility:hidden;" onclick="getResult1()">RESULT</button>
+        <span id="alerttxt" class="alertmsg" style="position:absolute; left: 307px;
+        top: 496px;
+        color: red; visibility: hidden;">Please Enter Value to proceed</span>
+        </div>
+
+
+
+
+
+    <div id="nav">
+        <img id="nextButton" onclick="navNext()" src="images/Next.png" />
+        </div>
+        <!--Blinking Arrow	-->	
+        <img class ="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png"/>
+        
+        <div id="copyright"> &copy; 2018 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+        
+    
+<script src="../assets/js/iframeResize.js"></script></body>
+</html>
