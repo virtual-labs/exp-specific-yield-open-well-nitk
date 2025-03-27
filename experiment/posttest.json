@@ -2,38 +2,90 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary purpose of conducting a pump test on an open well?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To assess the well's hydraulic performance",
+        "b": "To determine the depth of the well",
+        "c": "To estimate the well's water storage capacity ",
+        "d": "To check for contamination in the well"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "A pump test on an open well is a hydrogeological procedure carried out to evaluate how well the well interacts with the surrounding aquifer and how it performs in terms of delivering groundwater. A pump test on an open well serves as a valuable tool for assessing the well's hydraulic performance, aquifer characteristics, and sustainability, ultimately helping in the effective management and utilization of groundwater resources. ",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In the field determination, pumping must continue at a ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Uniform rate until just before time to approach steady state",
+        "b": "Non- uniform rate for sufficient time to approach steady state",
+        "c": "Uniform rate for sufficient time to approach steady state",
+        "d": "Non-uniform rate until just before time to approach steady state"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "The steady state condition is the one in which the drawdown changes negligibly with time. In order to get accurate results, pumping must continue at a uniform rate for sufficient time in the field determination to approach steady state. ",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of recording the drawdown during a pump test?",
+      "answers": {
+        "a": "To calculate the well's storage capacity",
+        "b": "To estimate the well's depth",
+        "c": "To determine the rate of water withdrawal",
+        "d": "To assess the well's yield and efficiency"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "Drawdown refers to the decrease in the water level or hydraulic head in the vicinity of a pumping well during a pump test. Recording of the drawdown during a pump test is crucial for assessing the well's yield, efficiency, and the hydraulic behavior of the aquifer, which, in turn, aids in sustainable groundwater management and well operation.("
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The specific yield of an aquifer can be estimated more accurately by using a ____________ pumping test",
+      "answers": {
+        "a": "Constant-rate",
+        "b": "Step-drawdown",
+        "c": "Slug test",
+        "d": "Multi-well"
+      },
+      "explanations": {
+        "a": "A constant-rate pumping test involves extracting groundwater from a well at a constant and uniform rate over the duration of the test.the constant-rate pumping test is favored for estimating specific yield because it provides stable, steady-state conditions that enhance the precision of aquifer parameter determination and is suitable for a wide range of hydrogeological conditions",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Specific yield is a critical parameter for assessing the sustainability of groundwater extraction. It helps in determining:",
+      "answers": {
+        "a": "The well's age",
+        "b": "The safe yield of the aquifer",
+        "c": "The potential for contamination",
+        "d": "The maximum drawdown in the well"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Safe yield refers to the maximum rate at which water can be withdrawn from an aquifer over an extended period, typically on an annual basis, without depleting the aquifer or causing long-term negative impacts. It represents a sustainable level of groundwater use that balances human water needs with the need to protect the aquifer's long-term health. Specific yield is a key factor in estimating the safe yield because it helps in understanding how much water an aquifer can provide without causing undue harm. The specific yield is integral to determining the safe yield of an aquifer, which is crucial for sustainable groundwater management. By carefully considering the specific yield, hydrogeologists and water resource managers can establish guidelines for groundwater extraction that protect the aquifer's health and ensure a reliable water supply for the future. ",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+
     }
   ]
 }
