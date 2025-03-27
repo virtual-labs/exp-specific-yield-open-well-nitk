@@ -2,38 +2,85 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "A deep well ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Is always deeper than a shallow well",
+        "b": "Has more discharge than a shallow well",
+        "c": "Is weaker structurally than a shallow well",
+        "d": "Both (A) and (B)"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "Deep wells, with depths ranging from 70 to 300 meters and the capability to access multiple aquifers, can yield as much as 200 to 225 liters per second, whereas shallow wells, typically ranging from 20 to 70 meters in depth and accessing only one aquifer, may yield up to 15 liters per second. Consequently, deep wells exhibit higher water yields when compared to their shallow counterparts.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The observation of drawdown, which occurs during a consistent discharge of water, is noted at several wells in",
+      "answers": {
+        "a": "Pumping out test",
+        "b": "Pumping in test",
+        "c": "Constant head permeability test",
+        "d": "Falling head permeability test"
+      },
+      "explanations": {
+        "a": "Permeability can be assessed through a pumping test, during which pumping should be maintained at a constant rate for an adequate duration to approach a stable state. ",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The value of specific yield depends upon the shape of the pores.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The specific yield, denoted as Sγ, is determined by the formula  Sγ = (Vwy/V) * 100, and it is directly related to the volume of water drained. This relationship highlights that the specific yield value is influenced by the characteristics of the pore structure.   ",
+        "b": ""
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What happens to the discharge in an individual well when two wells are located in close proximity to each other?",
+      "answers": {
+        "a": "Increased",
+        "b": "Decreased",
+        "c": "Not effected",
+        "d": "Remains same with respect to each other"
+      },
+      "explanations": {
+        "a": "",
+        "b": "When two wells are positioned closely, their drawdown curves intersect within the zones of zero drawdown radii, resulting in a reduction of discharge in each well.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the field determination, pumping must continue at a ",
+      "answers": {
+        "a": "Uniform rate for sufficient time to approach steady state",
+        "b": "Non- uniform rate for sufficient time to approach steady state",
+        "c": "Uniform rate until just before time to approach steady state",
+        "d": "Non-uniform rate until just before time to approach steady state"
+      },
+      "explanations": {
+        "a": " The condition of a steady state is characterized by minimal changes in drawdown over time. To obtain precise results, it is necessary to maintain a consistent pumping rate for an adequate duration during field determinations to reach this steady state condition.   ",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
