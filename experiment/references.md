@@ -4,7 +4,7 @@
 <th>Contributors list</th>
 </tr>
 <tr style="background-color: white">
-<td style="width: 500">
+<td style="width: 450">
 <ol >
 <li>Lidar: Range-Resolved Optical Remote Sensing of the Atmosphere" by Claus Weitkamp (2005).</li>
 <li>Introduction to Lidar" by Margaret Campbell-Brown and Richard S. J. Tolson (2012).</li>
