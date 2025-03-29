@@ -4,8 +4,8 @@
 <th>Contributors list</th>
 </tr>
 <tr style="background-color: white">
-<td>
-<ol style="width: 500">
+<td style="width: 500">
+<ol >
 <li>Lidar: Range-Resolved Optical Remote Sensing of the Atmosphere" by Claus Weitkamp (2005).</li>
 <li>Introduction to Lidar" by Margaret Campbell-Brown and Richard S. J. Tolson (2012).</li>
 <li>Lidar Remote Sensing: Fundamentals and Applications" by Guangxing Wang and Qiusheng Wu (2019).</li>
