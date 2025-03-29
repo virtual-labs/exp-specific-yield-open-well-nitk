@@ -1,1 +1,1 @@
-## Determination of Specific Yield of Open well
+To determine of Specific Yield of Open well
