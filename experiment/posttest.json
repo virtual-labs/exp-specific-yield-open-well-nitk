@@ -2,38 +2,90 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary purpose of conducting a pump test on an open well?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To assess the well's hydraulic performance",
+        "b": "To determine the depth of the well",
+        "c": "To estimate the well's water storage capacity ",
+        "d": "To check for contamination in the well"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "A pump test on an open well is a hydrogeological procedure carried out to evaluate how well the well interacts with the surrounding aquifer and how it performs in terms of delivering groundwater. A pump test on an open well serves as a valuable tool for assessing the well's hydraulic performance, aquifer characteristics, and sustainability, ultimately helping in the effective management and utilization of groundwater resources. ",
+        "b": "The depth of the well is a physical dimension that can be measured simply with a weighted tape or a laser measure. You do not need to perform a dynamic pumping test to find out how deep a hole is.",
+        "c": "Storage capacity is a static volume calculation (Area of the well x Depth of water). While knowing the volume is helpful, a pump test is a dynamic test focused on the flow of water into the well from the aquifer, not just the water sitting in the tank of the well.",
+        "d": "Checking for contamination requires water quality sampling and laboratory analysis (testing for bacteria, nitrates, or heavy metals). While you might collect a sample during a pump test, the hydraulic test itself does not provide information about the chemical or biological safety of the water."
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In the field determination, pumping must continue at a ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Uniform rate until just before time to approach steady state",
+        "b": "Non- uniform rate for sufficient time to approach steady state",
+        "c": "Uniform rate for sufficient time to approach steady state",
+        "d": "Non-uniform rate until just before time to approach steady state"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Stopping 'just before' steady state means you are still in the transient (unsteady) phase. At this point, water is still being removed from 'storage' within the cone of depression, and the mathematical assumptions used for equilibrium calculations would be invalid.",
+        "b": "Pumping at a non-uniform rate makes the data nearly impossible to analyze accurately. It becomes difficult to distinguish whether a drop in the water table was caused by the soil's resistance or simply because the pump speed increased.",
+        "c": "The steady state condition is the one in which the drawdown changes negligibly with time. In order to get accurate results, pumping must continue at a uniform rate for sufficient time in the field determination to approach steady state. ",
+        "d": "This combines both procedural errors. It introduces mechanical inconsistency (non-uniform rate) and fails to reach the equilibrium needed for simplified, accurate field determination."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of recording the drawdown during a pump test?",
+      "answers": {
+        "a": "To calculate the well's storage capacity",
+        "b": "To estimate the well's depth",
+        "c": "To determine the rate of water withdrawal",
+        "d": "To assess the well's yield and efficiency"
+      },
+      "explanations": {
+        "a": "To calculate the well's storage capacity — Storage capacity is a static measurement based on the physical volume of the well casing (V =𝜋r<sup>2</sup>h). While drawdown tells you how much water was removed, it doesn't define the total volume the well can hold.",
+        "b": "The depth of a well is measured with a physical probe or tape. Drawdown only measures the movement of the water surface; it provides no information about where the bottom of the borehole is located.",
+        "c": "This is a common point of confusion. The 'rate of withdrawal' (Discharge, Q) is a value we set and measure using a flow meter or weir. Drawdown is the reaction of the aquifer to that withdrawal, not the measurement of the withdrawal itself.",
+        "d": "Drawdown refers to the decrease in the water level or hydraulic head in the vicinity of a pumping well during a pump test. Recording of the drawdown during a pump test is crucial for assessing the well's yield, efficiency, and the hydraulic behavior of the aquifer, which, in turn, aids in sustainable groundwater management and well operation.("
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The specific yield of an aquifer can be estimated more accurately by using a ____________ pumping test",
+      "answers": {
+        "a": "Constant-rate",
+        "b": "Step-drawdown",
+        "c": "Slug test",
+        "d": "Multi-well"
+      },
+      "explanations": {
+        "a": "This describes the style of pumping (keeping the flow Q the same). While constant-rate pumping is used during a multi-well test, the 'constant-rate' part alone doesn't guarantee accuracy for S<sup>y</sup> if you are only measuring the pumping well itself.",
+        "b": "This test is used primarily to determine well efficiency and the 'well loss' (friction caused by the screen and casing). It involves increasing the pump rate in 'steps' to see how the well handles stress, but it is not designed to measure the aquifer's storage properties like S<sup>y</sup>.",
+        "c": " A slug test is a quick, small-scale test where a 'slug' of water (or a solid cylinder) is dropped into a well to see how fast the water level recovers. Because it only affects a very tiny area immediately surrounding the borehole, it is notorious for being inaccurate when estimating storage parameters like specific yield.",
+        "d": "A multi-well pumping test, also known as an observation well test, involves one pumping well and several nearby observation wells to measure drawdown at different distances. This arrangement provides a better understanding of aquifer behavior by allowing the analysis of water-level changes over a wider area. It helps in separating key aquifer properties such as specific yield (<sup>S</sup>y) and transmissivity, leading to more reliable results. Since the data are collected from multiple locations, the estimation becomes more accurate compared to tests that rely on measurements from a single well."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Specific yield is a critical parameter for assessing the sustainability of groundwater extraction. It helps in determining:",
+      "answers": {
+        "a": "The well's age",
+        "b": "The safe yield of the aquifer",
+        "c": "The potential for contamination",
+        "d": "The maximum drawdown in the well"
+      },
+      "explanations": {
+        "a": "Specific yield (S<sub>y<sub>) is a physical property of the geological material (sand, gravel, silt). It does not change over time and has no relationship to when a well was drilled or the mechanical 'age' of the infrastructure.",
+        "b": "Safe yield refers to the maximum rate at which water can be withdrawn from an aquifer over an extended period, typically on an annual basis, without depleting the aquifer or causing long-term negative impacts. It represents a sustainable level of groundwater use that balances human water needs with the need to protect the aquifer's long-term health. Specific yield is a key factor in estimating the safe yield because it helps in understanding how much water an aquifer can provide without causing undue harm. The specific yield is integral to determining the safe yield of an aquifer, which is crucial for sustainable groundwater management. By carefully considering the specific yield (S<sub>y</sub>), hydrogeologists and water resource managers can establish guidelines for groundwater extraction that protect the aquifer's health and ensure a reliable water supply for the future. ",
+        "c": "While the movement of water carries contaminants, Specific Yield(S<sub>y<sub>) only measures the quantity of water available. Factors like Permeability and Hydraulic Gradient are much more important for predicting how fast or where a contaminant plume will travel.",
+        "d": "Drawdown (how much the water level drops during pumping) is primarily a function of the Well Efficiency and the Transmissivity (how easily water flows toward the well). While (S<sub>y<sub>) plays a role in the long-term cone of depression, maximum drawdown is a localized engineering limit of the pump and well screen."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+
     }
   ]
 }

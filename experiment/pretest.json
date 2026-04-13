@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is specific yield in the context of groundwater hydrology?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The yield of a specific pump used in a test",
+        "b": "The yield of a specific well in an aquifer",
+        "c": "The amount of water that drains freely from an aquifer per unit volume",
+        "d": "The specific depth at which a well should be drilled"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The yield of a specific pump refers to pump capacity or discharge rate (Q). It is a mechanical property of a machine, not a geological property of the Earth.",
+        "b": "The yield of a specific well is known as well yield, which is the volume of water a well can produce per unit of time. While related to the aquifer's properties, it is a localized measurement of a specific infrastructure point, not a general hydrological constant like specific yield.",
+        "c": "Specific yield, in the context of groundwater hydrology, refers to the amount of water that an aquifer can release or 'drain' freely under the influence of gravity per unit volume of the aquifer. It represents the portion of groundwater that can be extracted from an aquifer without the need for additional pumping or external forces. Specific yield is an important parameter in groundwater hydrology and is used to assess the potential water supply from an aquifer and manage groundwater resources.",
+        "d": "The specific depth of a well — This is simply a construction specification. While the depth is determined by the location of the water table and the aquifer thickness, it has nothing to do with the ratio of water drainage."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "During a pump test, which parameter is typically measured to assess the well's performance?",
+      "answers": {
+        "a": "Well diameter",
+        "b": "Water temperature",
+        "c": "Well construction materials",
+        "d": "Flow rate or discharge"
+      },
+      "explanations": {
+        "a": "While the diameter (d) of the well is a physical dimension that influences how much water can enter the casing, it is a fixed design specification. It is not a variable 'measured' during the test to assess performance; it is a known value used in the final calculations.",
+        "b": "While temperature might be recorded for water quality or viscosity corrections, it is not a primary indicator of a well's hydraulic performance (how much volume it can move).",
+        "c": "The type of casing (PVC, steel) or screen material is a structural detail. While poor material choice can lead to corrosion or clogging (affecting performance over years), it is not a parameter measured during a 24-hour or 72-hour pumping test.",
+        "d": "Flow rate or discharge is a critical parameter measured during a pump test to evaluate the well's performance. This measurement refers to the volume of water that the well can deliver over a specific time period. It is usually expressed in units like gallons per minute (GPM), liters per second, or cubic meters per hour, depending on the local conventions."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary purpose of estimating specific yield for an aquifer?",
+      "answers": {
+        "a": "To determine the well's construction material",
+        "b": "To assess the well's depth",
+        "c": "To optimize pump performance",
+        "d": "To manage groundwater resources and plan for sustainable extraction"
+      },
+      "explanations": {
+        "a": "The choice of PVC, stainless steel, or carbon steel depends on the chemistry of the water (corrosivity) and the depth of the well, not the drainage ratio of the soil.",
+        "b": "Well depth is determined by the location of the water table and the thickness of the saturated zone. While S<sup>y</sup> tells you how much water is there, it doesn't dictate how deep you must drill to reach it.",
+        "c": "Pump optimization is a mechanical task involving the 'Pump Curve' and the Specific Capacity of the well (discharge vs. drawdown). Specific yield is a property of the aquifer, whereas pump performance is a property of the equipment.",
+        "d": "Specific yield is a critical parameter in groundwater hydrology because it helps hydrologists and water resource managers understand how much water an aquifer can provide for various uses. By estimating specific yield, they can make informed decisions about the sustainable management and extraction of groundwater resources. "
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What happens to the discharge in an individual well when two wells are located in close proximity to each other?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Increased",
+        "b": "Decreased",
+        "c": "Not effected",
+        "d": "Remains same with respect to each other"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This would violate the principle of mass balance. Two wells cannot create more water by being near each other; they simply divide the existing yield of the aquifer, usually resulting in less water for each than if they were isolated.",
+        "b": "When two wells are positioned closely, their drawdown curves intersect within the zones of zero drawdown radii, resulting in a reduction of discharge in each well.",
+        "c": "This only happens if the wells are spaced beyond their Radius of Influence. If they are in 'close proximity' the physics of the aquifer guarantees that they will interfere with one another.",
+        "d": "This is a bit of a distractor. While they might both suffer the same amount of decrease if they are identical, their individual discharge rates certainly do not 'remain the same' compared to their performance as standalone wells."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the field determination, pumping must continue at a ",
+      "answers": {
+        "a": "Uniform rate for sufficient time to approach steady state",
+        "b": "Non- uniform rate for sufficient time to approach steady state",
+        "c": "Uniform rate until just before time to approach steady state",
+        "d": "Non-uniform rate until just before time to approach steady state"
+      },
+      "explanations": {
+        "a": " The condition of a steady state is characterized by minimal changes in drawdown over time. To obtain precise results, it is necessary to maintain a consistent pumping rate for an adequate duration during field determinations to reach this steady state condition.   ",
+        "b": "Pumping at a non-uniform rate makes the data nearly impossible to analyze. You wouldn't know if a drop in the water table was because the soil is dense or because you accidentally turned the pump up.",
+        "c": "Stopping 'just before' steady state means you are still in the transient (unsteady) phase. At this point, water is still being removed from storage within the cone of depression, and the mathematical assumptions used for equilibrium calculations would be invalid.",
+        "d": "This combines both errors. It introduces mechanical inconsistency (non-uniform rate) and fails to reach the equilibrium needed for simplified, accurate field determination."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
